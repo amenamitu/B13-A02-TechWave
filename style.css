@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: "DM Sans", sans-serif;
+     background-color:#1A0B2E;
+     color: #FFFFFF;
+}
+ .container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+ }
+
+ header{
+    padding:16px 200px ;
+ }
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav .menu{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+ }
+ .logo h2{
+    font-size: 30px;
+    font-weight: bold;
+ }
+ .logo span {
+  background: linear-gradient(1300deg,#8b1cff , #ff2fd6, #ffd36e);
+  background-clip: text;
+   color: transparent;
+  
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+} 
+.gradient{
+     background: linear-gradient(-130deg,#8b1cff , #ff2fd6,#ffd36e);
+}
+.btn i{
+    margin-left: 5px;
+}
