@@ -39,6 +39,13 @@ p{
    line-height: 20px;
    opacity: 0.8;
 }
+.section-title{
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 /* Style Header Section */
  header{
     padding:16px 200px ;
@@ -127,12 +134,7 @@ p{
    font-size: 28px;
 }
 /* style features section */
-.features h2 {
-  text-align: center;
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
+
 .features-card {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -150,16 +152,46 @@ p{
 .interviews { grid-area: interviews; }
 .resources { grid-area: resources; }
 
-.card {
+.card{
   border-radius: 40px;
-  background-color: rgba(53, 17, 101, 0.4); ;
+  background-color: rgba(53, 17, 101, 0.4); 
   padding: 40px;
 }
 .card h4{
    margin-top:10px;
    margin-bottom: 10px;
 }
-
+/* Episodes section */
+.episodes-card{
+   margin-top: 80px;
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.card-1{
+   width:100%;
+   height: 500px;
+   border-radius: 40px;
+   padding: 10px;
+  background-color: rgba(53, 17, 101, 0.4);
+}
+.card-1 iframe{
+   width: 340px;
+   border-top-left-radius: 40px;
+   border-top-right-radius: 40px;
+}
+.card-1 h4{
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 29px;
+   margin-bottom: 8px;
+}
+.margin{
+   margin-top: 8px;
+}
+.little{
+   color: #00Ff88;
+}
 /* Responsive */
 @media (max-width: 992px) {
   .features-card {
