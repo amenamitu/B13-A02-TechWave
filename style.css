@@ -192,6 +192,35 @@ p{
 .little{
    color: #00Ff88;
 }
+/* Style host section */
+
+.host-container{
+   margin-top: 50px;
+   background-color: rgba(53, 17, 101, 0.4);
+   padding: 40px;
+   border-radius: 20px;
+   display: flex;
+   gap: 24px;
+   align-items: center;
+}
+.host-content h3{
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 39px;
+}
+.host-content .logo{
+   margin-top: 7px;
+   display: flex;
+   gap: 5px;
+}
+.host-content .logo .logo-1{
+   width: 40px;
+   height: 40px;
+   border: 1px solid rgba(83, 60, 114, 1);
+   border-radius: 50%;
+   padding: 10px;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .features-card {
