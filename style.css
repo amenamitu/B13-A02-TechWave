@@ -34,6 +34,11 @@ body{
    gap: 6px;
    align-items: center;
 }
+p{
+    font-size: 16px;
+   line-height: 20px;
+   opacity: 0.8;
+}
 /* Style Header Section */
  header{
     padding:16px 200px ;
@@ -94,12 +99,83 @@ body{
 }
 .hero p{
    margin-bottom: 24px;
-   font-weight: 400;
-   font-size: 16px;
 }
 .btn-1{
    margin-left: 5px;
    background-color: transparent;
    color: #00Ff88;
    border: 1px solid #00Ff88;
+}
+/* style about section */
+.about{
+   text-align: center;
+   margin-bottom: 120px;
+}
+.about h2{
+   font-weight: bold;
+   font-size: 48px;
+}
+.stats {
+   margin-top: 80px;
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.stats h3{
+   color: #00Ff88;
+   font-weight: bolder;
+   font-size: 28px;
+}
+/* style features section */
+.features h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.features-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 25px;
+  grid-template-areas:
+    "premium mobile"
+    "premium community"
+    "interviews resources";
+
+}
+.premium { grid-area: premium; }
+.mobile { grid-area: mobile; }
+.community { grid-area: community; }
+.interviews { grid-area: interviews; }
+.resources { grid-area: resources; }
+
+.card {
+  border-radius: 40px;
+  background-color: rgba(53, 17, 101, 0.4); ;
+  padding: 40px;
+}
+.card h4{
+   margin-top:10px;
+   margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card{
+    grid-column: span 2;
+  }
+}
+@media (max-width: 576px) {
+  .features-card {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    grid-column: span 1;
+  }
 }
